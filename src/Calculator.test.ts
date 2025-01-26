@@ -14,5 +14,9 @@ describe("String number calculator", () => {
     it("test if passing two number in string to function", () => {
         expect(calc.stringAdd("5, 6")).toBe(11);
     })
+
+    it("test if passing multiple number in string to function", () => {
+        expect(calc.stringAdd("2, 4, 3, 7, 8")).toBe(24);
+    })
     
 })
