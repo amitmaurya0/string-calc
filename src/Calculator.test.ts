@@ -20,7 +20,7 @@ describe("String number calculator", () => {
     })
 
     it("test if passing numbers with new line as delimeter in string to function", () => {
-        expect(calc.stringAdd("2\n4,5/n6")).toBe(11);
+        expect(calc.stringAdd("2\n4,5\n6")).toBe(17);
     })
     
 })
