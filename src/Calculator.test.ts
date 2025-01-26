@@ -26,5 +26,9 @@ describe("String number calculator", () => {
     it("test if passing numbers with custom delimeter in string to function", () => {
         expect(calc.stringAdd("//;\n2;4;5")).toBe(11);
     })
+
+    it("test if passing numbers with negative numbers in string to function", () => {
+        expect(() => calc.stringAdd("1,2,-3,-4")).toThrow("negative numbers not allowed: -3, -4")
+    })
     
 })
