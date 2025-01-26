@@ -5,7 +5,9 @@ A simple string calculator implemented in TypeScript using Test-Driven Developme
 
 ## Features
 
-- Add numbers in a string separated by commas or newlines.
+- Allow the add method to handle any amount of numbers
+- Add numbers in a string separated by commas.
+- Add numbers in a string separated by newlines.
 - Supports custom delimiters of any length.
 - Ignores numbers greater than 1000.
 - Throws an error for negative numbers, listing all negatives in the error message.
