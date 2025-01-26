@@ -21,6 +21,7 @@ export class Calculator {
             throw new Error("negative numbers not allowed: "+negativeNumbers.join(", "))
         }
         
-        return numbers.reduce((sum, num) => sum + num, 0)
+        const finalNumbers = numbers.filter((item) => item <= 1000)
+        return finalNumbers.reduce((sum, num) => sum + num, 0)
     }
 }

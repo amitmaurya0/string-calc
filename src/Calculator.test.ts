@@ -30,5 +30,9 @@ describe("String number calculator", () => {
     it("test if passing numbers with negative numbers in string to function", () => {
         expect(() => calc.stringAdd("1,2,-3,-4")).toThrow("negative numbers not allowed: -3, -4")
     })
+
+    it("test if passing few numbers greater than 1000 in string to function", () => {
+        expect(calc.stringAdd("2, 10, 1001")).toBe(12);
+    })
     
 })
